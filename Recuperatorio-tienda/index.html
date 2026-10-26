@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerHouse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer ></script>
+</head>
+<body>
+
+    <header>
+        <h2>Parcial 1 - Division 131</h2>
+    </header>
+
+    <main>
+
+        <div class="contenedor">
+        
+            <div class="catalogo">
+                <div class="titulares">
+                    <h1 id="titulo">Burger House</h1>
+                    <span id="contador">Carrito (0)</span>
+                </div>
+            
+                <hr>
+                
+                
+                <div class="filtros">
+                    
+                    <div class="radios">
+                        <label><input type="radio" name="categoria" id="buscador" value="todas" checked> Todas</label>
+                        <label><input type="radio" name="categoria" id="buscador" value="clasicas"> Clasicas</label>
+                        <label><input type="radio" name="categoria" id="buscador" value="especiales"> Especiales</label>
+                        <label><input type="radio" name="categoria" id="buscador" value="combos"> Combos</label>
+                    </div>
+                    
+                    
+                    <input type="text" id="buscador" placeholder="Buscar productos">
+                    
+                    <select id="orden">
+                        <option value="">Ordenar por precio</option>
+                        <option value="menor">Ordenar por menor precio</option>
+                        <option value="mayor">Ordenar por mayor precio</option>
+                    </select>
+
+
+                </div>
+        
+                
+            </div>
+            
+            <section id="products-container"></section>
+
+            <aside>
+                <h2>Mi carrito</h2>
+                <ul id="cart-list"></ul>
+                <p id="cart-total"> Total: $ 0</p>
+                <button id="vaciar"> VACIAR CARRITO </button>
+            </aside>
+   
+        </div>
+    </main>
+    
+    <footer>
+        <p>Santiago Fabiano</p>
+    </footer>
+
+</body>
+</html>
